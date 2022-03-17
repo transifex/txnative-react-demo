@@ -40,7 +40,7 @@ export default function Setup() {
         </div>
       </div>
       <div className="o-highlight o-highlight--success">
-        <h3 className="o-highlight__color u-marginBottom-0_5x">🎉 That&apos;s all the setup you'll need in Transifex</h3>
+        <h3 className="o-highlight__color u-marginBottom-0_5x"><b>🎉 That&apos;s all the setup you'll need in Transifex</b></h3>
         <p className="u-color-muted">
           From now on your only visits in Transifex are for translations and language additions.
         </p>

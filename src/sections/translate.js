@@ -21,7 +21,7 @@ export default function Translate() {
 
       <div className="o-highlight o-highlight--success">
         {/* <h3 className="o-highlight__color u-marginBottom-0_5x"><T _str="You now know the core of what you can do with Transifex Native!" /></h3> */}
-        <h3 className="o-highlight__color u-marginBottom-0_5x">You now know the core of what you can do with Transifex Native!</h3>
+        <h3 className="o-highlight__color u-marginBottom-0_5x"><b>You now know the core of what you can do with Transifex Native!</b></h3>
 
         {/* <p className="u-color-muted"><T _str="Feel free to play more with this app or explore the Native documentation." /></p> */}
         <p className="u-color-muted">Feel free to play more with this app or explore the Native documentation.</p>

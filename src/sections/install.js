@@ -21,12 +21,16 @@ tx.init({
   // Public project token, defaults to empty string
   token: '${token}',
 });`}</pre></code>
-      {/* <p><UT _str="Make sure to replace <span className='o-pre'>project_token</span> with the token you saved in the doc from step #4 above!" /></p> */}
-      <p>Make sure to set <span className="o-pre">token</span> with the token you saved in the doc from step #1 above!</p>
+      {(token === 'project_token') &&
+      <>
+        {/* <p><UT _str="Make sure to replace <span className='o-pre'>project_token</span> with the token you saved in the doc from step #4 above!" /></p> */}
+        <p>Make sure to set <span className="o-pre">project_token</span> with the token you saved in the doc from step #1 above!</p>
+      </>
+      }
 
       <div className="o-highlight o-highlight--success">
-        {/* <h3 className="o-highlight__color u-marginBottom-0_5x"><T _str="🎉 Your React app can now &quot;talk&quot; to your Transifex Native project!" /></h3> */}
-        <h3 className="o-highlight__color u-marginBottom-0_5x">🎉 Your React app can now &quot;talk&quot; to your Transifex Native project!</h3>
+        {/* <h3 className="o-highlight__color u-marginBottom-0_5x"><b><T _str="🎉 Your React app can now &quot;talk&quot; to your Transifex Native project!" /></b></h3> */}
+        <h3 className="o-highlight__color u-marginBottom-0_5x"><b>🎉 Your React app can now &quot;talk&quot; to your Transifex Native project!</b></h3>
       </div>
     </div>
   );

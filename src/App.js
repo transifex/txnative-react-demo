@@ -8,6 +8,7 @@ import Translate from './sections/translate';
 export default function App() {
   const SECTIONS = [
     {
+      // text: <T _str="Setup Project in Transifex" />,
       text: 'Setup Project in Transifex',
       component: <Setup />,
     },
@@ -16,12 +17,12 @@ export default function App() {
       component: <Install />,
     },
     {
-      text: 'Send content to Transifex',
-      component: <Send />,
-    },
-    {
       text: 'Map your content for localization',
       component: <Map />,
+    },
+    {
+      text: 'Send content to Transifex',
+      component: <Send />,
     },
     {
       text: 'Translate & view your app localized!',
@@ -41,10 +42,10 @@ export default function App() {
             Transifex Native: React demo
           </h1>
 
-          <p className="u-paddingVertical-0_5x">
+          <h3 className="u-paddingBottom-0_5x">
             {/* <T _str="Welcome to the Transifex Native React demo. This page will be your testbench and tutorial with Transifex Native." /> */}
             Welcome to the Transifex Native React demo. This page will be your testbench and tutorial with Transifex Native.
-          </p>
+          </h3>
           <hr/>
         </div>
       </div>
@@ -56,7 +57,11 @@ export default function App() {
                 <li
                   key={index}
                   onClick={() => setSection(index)}
-                  className="o-link u-cursor-pointer">{entry.text}</li>
+                  className={(index === section) ? 'u-backgroundColor-highlight' : 'u-cursor-pointer'}>
+                    <span className={(index === section) ? 'o-link is-active' : 'o-link'}>
+                      {entry.text}
+                    </span>
+                  </li>
               );
             })}
           </ol>
