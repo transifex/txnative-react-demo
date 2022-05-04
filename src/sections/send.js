@@ -11,7 +11,7 @@ export default function Send() {
       <p>Open the console in Glitch to identify all mapped strings and send to Transifex with the command:</p>
 
       <code className="o-code">
-        $ npx txjs-cli push src --token={token} --secret={secret}
+        npx txjs-cli push src --token={token} --secret={secret}
       </code>
       {(token === 'project_token') &&
       <>
